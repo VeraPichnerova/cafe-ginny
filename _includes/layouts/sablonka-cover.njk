@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Café Ginny</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="page">
+                {% include "partials/header.njk" %}
+
+                <main>
+                    {{ content | safe}}
+                </main>
+
+                {% include "partials/footer.njk" %}
+            </div>
+
+            <div class="aside">
+            </div>
+        </div>
+    </body>
+</html>

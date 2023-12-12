@@ -1,0 +1,32 @@
+<header class="header">
+    <h1 class="header__logo">Café Ginny</h1>
+    <h2 class="claim--header"> Úžasná kavárna v centru Kutné Hory</h2>
+    <div class="header__info">
+        <div class="address">
+            <h3 class="header__subtitle">Adresa:</h3>
+            <p class="header__text">Barborská 25/7<br>
+                Kutná Hora<br>
+                Tel.: 123 456 789<br>
+                Rezervace: <a href="mailto:rezervace@cafeginny.cz">rezervace@cafeginny.cz</a>
+            </p>
+        </div>
+        <div class="opening-hours">
+            <h3 class="header__subtitle" >Otevírací doba:</h3>
+            <p class="header__text">pondělí - čtvrtek 08:00 - 20:00<br>
+                pátek - sobota 09:00 - 20:00<br>
+                neděle 09:00 - 18:00<br>
+            </p>
+        </div>
+    </div>
+    <nav class="menu">
+        <ul class="menu__items">
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == ''}}"><a class="menu__link" href="/">DOMŮ</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'nabidka'}}"><a class="menu__link" href="/nabidka/">NAŠE NABÍDKA</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'akce'}}"><a class="menu__link" href="/akce/">AKCE</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'o-kave'}}"><a class="menu__link" href="/o-kave/">O KÁVĚ</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == '#map'}}"><a class="menu__link" href="/#map">KDE NÁS NAJDETE</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'rezervace'}}"><a class="menu__link" href="/rezervace/">REZERVACE</a></li>
+        </ul>
+    </nav>
+</header>
+    

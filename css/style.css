@@ -1,0 +1,276 @@
+html {
+  box-sizing: border-box;
+  background-color: darkgrey;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  background-color: rgb(234, 214, 198);
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1000px;
+}
+
+.footer-info {
+  width: 100%;
+  padding: 15px 10px;
+  text-align: center;
+  background-color: rgba(152, 9, 100, 0.7725490196);
+  color: rgb(234, 214, 198);
+  font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    display: flex;
+  }
+  .page {
+    flex: 1 1 85%;
+  }
+  .aside {
+    flex: 0 0 15%;
+    background-image: url(/images/bgr-cofee2.png);
+    background-position: top;
+    background-repeat: repeat;
+  }
+}
+.header {
+  width: 100%;
+  padding: 10px 10px 5px 10px;
+  background-color: rgba(152, 9, 100, 0.7725490196);
+  color: rgb(234, 214, 198);
+  margin-bottom: 5px;
+}
+
+.header__logo {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.claim {
+  font-size: 20px;
+  font-style: italic;
+  color: rgba(152, 9, 100, 0.7725490196);
+}
+
+.claim--header {
+  color: rgb(234, 214, 198);
+}
+
+.header__subtitle {
+  font-size: 16px;
+  font-style: bold;
+  margin: 0;
+}
+
+.header__text {
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__items {
+  list-style: none;
+  padding: 0;
+}
+
+.menu__item {
+  background-color: rgb(234, 214, 198);
+  color: rgba(152, 9, 100, 0.7725490196);
+  border: 1px solid rgb(234, 214, 198);
+  border: 1px solid rgba(152, 9, 100, 0.7725490196);
+  border-radius: 5px;
+}
+
+.menu__item--active {
+  color: rgb(234, 214, 198);
+  background-color: rgba(152, 9, 100, 0.7725490196);
+  border: 1px solid rgb(234, 214, 198);
+}
+
+.menu__link {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  background-color: rgba(152, 9, 100, 0.459);
+  color: rgb(234, 214, 198);
+}
+
+@media screen and (min-width: 600px) {
+  .header__info {
+    display: flex;
+    gap: 30px;
+  }
+  .address,
+  .opening-hours {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__items {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .menu__item {
+    display: inline-block;
+  }
+  .menu__link {
+    padding: 10px 10px;
+  }
+}
+.reservation-section,
+.pricelist-section,
+.akce-section,
+.o-kave-section,
+.map {
+  padding: 20px;
+}
+
+.picture__img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.img__float-left {
+  width: 35%;
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.img__float-right {
+  width: 35%;
+  float: right;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .hero,
+  .newsletter,
+  .akce-section__item {
+    display: flex;
+    gap: 40px;
+  }
+  .content {
+    flex: 1 1 60%;
+    align-items: start;
+  }
+  .picture {
+    order: -1;
+    flex: 1 1 40%;
+    align-items: start;
+  }
+}
+a,
+a:hover,
+a:visited {
+  color: inherit;
+}
+
+.form--newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+label,
+.form__input {
+  margin: 10px 10px 10px 0;
+}
+
+.form__label {
+  width: 100px;
+}
+
+.form__label-checkbox {
+  margin-left: 10px;
+}
+
+.button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(152, 9, 100, 0.459);
+  color: rgb(234, 214, 198);
+}
+
+.button:hover {
+  background-color: rgba(152, 9, 100, 0.7725490196);
+}
+
+.claim--center {
+  margin: 20px auto;
+  color: rgba(152, 9, 100, 0.7725490196);
+  text-align: center;
+}
+
+.pricelist {
+  width: 100%;
+}
+
+.pricelist td {
+  width: 85%;
+}
+
+@media screen and (min-width: 600px) {
+  .pricelist-section {
+    display: flex;
+    gap: 40px;
+  }
+  .pricelist__column {
+    flex: 1 1 45%;
+    align-items: start;
+  }
+}
+.content__subtitle {
+  color: rgba(152, 9, 100, 0.7725490196);
+}
+
+.content__subtitle,
+.content__text {
+  padding-top: 5px;
+}
+
+.content__text--long {
+  text-align: justify;
+}
+
+.content__ordered-list {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.content__unordered-list {
+  margin: 0;
+  padding: 15px;
+  list-style-position: outside;
+}
+
+.content__ordered-list li,
+.content__unordered-list li {
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: justify;
+}/*# sourceMappingURL=style.css.map */
