@@ -1,0 +1,53 @@
+---
+layout: layouts/sablonka-cover.njk
+title: Rezervace
+---
+
+        <section class="reservation-section">
+
+            <p class="content__text">Pokud si přejete provést rezervaci, můžete buď vyplnit níže uvedený formulář, nebo nám můžete napsat e-mail s požadavky na náš e-mail <a href="mailto:rezervace@cafeginny.cz">rezervace@cafeginny.cz,</a> samozřejmě nám můžete také zavolat na telefonní číslo 123 456 789. Budeme se těšit na vaši návštěvu.
+            </p>
+
+            <form class="form--reservation" action="https://submit-form.com/qM9XXyGPq" method="post">
+                <div class="form__item">
+                    <label class="form__label" for="jmeno">Jméno:</label>
+                    <input class="form__input" type="text" name="jmeno" id="jmeno" size="30" autofocus required>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="email">e-mail:</label>
+                    <input  class="form__input" type ="email" name="email" id="email" size="30" required>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="telefon">Tel.číslo:</label>
+                    <input class="form__input" type ="tel" name="telefon" id="telefon"  size="30" required>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="datum">Datum a čas:</label>
+                    <input class="form__input" type ="datetime-local" name="datum" id="datum" required>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="pocet">Počet osob:</label>
+                    <input class="form__input" type ="number" name="pocet" id="pocet" min="1" max="30" required>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label">Poznámka:</label>
+                    <textarea class="form__input" name="poznamka" id="poznamka" cols="30" rows="5">
+                    </textarea>
+                </div>
+
+                <div class="form__item">
+                    <input class="form__input-checkbox" type ="checkbox" name="newsletter" id="newsletter" value="Ano" unchecked>
+                    <label class="form__label-checkbox" for="newsletter">Ano, přeju si odebírat newsletter</label>
+                </div>
+                <div class="form__item">
+                    <button class="button" type="submit">Odeslat</button>
+                </div>
+                <div id="rezervace-odeslana">Formulář byl odeslán, rezervaci vám potvrdíme e-mailem. Budeme se těšit na vaši návštěvu.</div>
+
+            </form>
+        </section>

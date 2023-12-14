@@ -219,6 +219,11 @@ label,
   background-color: rgba(152, 9, 100, 0.7725490196);
 }
 
+#newsletter-odeslano,
+#rezervace-odeslana {
+  color: rgba(152, 9, 100, 0.459);
+}
+
 .claim--center {
   margin: 20px auto;
   color: rgba(152, 9, 100, 0.7725490196);
