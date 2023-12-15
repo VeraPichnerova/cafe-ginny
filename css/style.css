@@ -41,10 +41,9 @@ body {
 }
 .header {
   width: 100%;
-  padding: 10px 10px 5px 10px;
+  padding: 20px;
   background-color: rgb(234, 214, 198);
   color: rgba(152, 9, 100, 0.7725490196);
-  margin-bottom: 5px;
 }
 
 .header__logo {
@@ -54,14 +53,14 @@ body {
 }
 
 .header__claim {
-  color: rgba(152, 9, 100, 0.459);
+  color: rgba(152, 9, 100, 0.7725490196);
   font-size: 20px;
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 10px rgba(152, 9, 100, 0.459);
   font-style: italic;
 }
 
 .header__subtitle {
-  font-size: 16px;
+  font-size: 18px;
   font-style: bold;
   margin: 0;
 }
@@ -71,22 +70,28 @@ body {
   margin: 0 0 10px 0;
 }
 
-.menu {
-  margin-top: 20px;
-  margin: 0;
-  padding: 0;
+@media screen and (min-width: 600px) {
+  .header__logo-claim,
+  .header__info {
+    display: flex;
+    gap: 30px;
+    align-items: baseline;
+  }
+  .address,
+  .opening-hours {
+    display: flex;
+    flex-direction: column;
+  }
 }
-
 .menu__items {
   list-style: none;
-  padding: 0;
+  margin: 20px;
 }
 
 .menu__item {
   background-color: rgb(234, 214, 198);
   color: rgba(152, 9, 100, 0.7725490196);
   border: 1px solid rgb(234, 214, 198);
-  border: 1px solid rgba(152, 9, 100, 0.7725490196);
   border-radius: 5px;
 }
 
@@ -109,16 +114,8 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  .header__logo-claim,
-  .header__info {
-    display: flex;
-    gap: 30px;
-    align-items: baseline;
-  }
-  .address,
-  .opening-hours {
-    display: flex;
-    flex-direction: column;
+  .menu {
+    margin-left: 20px;
   }
   .menu__items {
     display: flex;
@@ -126,6 +123,7 @@ body {
     gap: 10px;
   }
   .menu__item {
+    margin: 20px;
     display: inline-block;
   }
   .menu__link {
@@ -264,19 +262,12 @@ label,
   text-align: justify;
 }
 
-.content__ordered-list {
-  margin: 0;
-  padding: 0;
-  list-style-position: inside;
-}
-
 .content__unordered-list {
   margin: 0;
   padding: 15px;
-  list-style-position: outside;
+  list-style-position: inside;
 }
 
-.content__ordered-list li,
 .content__unordered-list li {
   margin-bottom: 5px;
   padding: 0;
