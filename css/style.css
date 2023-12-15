@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  font-family: Verdana, serif;
-  font-size: 14px;
+  font-family: Georgia, serif;
+  font-size: 16px;
   background-color: rgb(234, 214, 198);
   margin: 0 auto;
   padding: 0;
@@ -22,7 +22,7 @@ body {
   text-align: center;
   background-color: rgba(139, 7, 91, 0.938);
   color: rgb(234, 214, 198);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 600px) {
@@ -47,7 +47,7 @@ body {
 
 .header__logo {
   font-size: 40px;
-  font-family: Georgia, serif;
+  font-family: Verdana, serif;
   color: rgba(139, 7, 91, 0.938);
   margin-top: 0;
 }
@@ -58,17 +58,17 @@ body {
 }
 
 .header__subtitle {
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(152, 9, 100, 0.646);
   font-style: italic;
   margin: 0;
 }
 
 .header__text {
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
   padding: 0;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -140,6 +140,10 @@ body {
   padding: 20px;
 }
 
+.akce-section__item {
+  margin-bottom: 20px;
+}
+
 .reservation-section {
   padding: 0 20px 20px 20px;
 }
@@ -171,9 +175,6 @@ body {
     display: flex;
     gap: 40px;
     justify-content: space-between;
-  }
-  .akce-section__item {
-    margin-bottom: 10px;
   }
   .content {
     flex: 1 1 60%;

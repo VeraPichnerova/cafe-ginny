@@ -10,6 +10,10 @@
     padding: variables.$spacer;
 }
 
+.akce-section__item {
+    margin-bottom: variables.$spacer;
+}
+
 .reservation-section {
     padding: 0 variables.$spacer variables.$spacer variables.$spacer;
 }
@@ -44,10 +48,6 @@
         gap: 2 * variables.$spacer;
         justify-content: space-between;
     }
-
-.akce-section__item {
-    margin-bottom: 10px;
-}
 
     .content {
         flex: 1 1 60%;

@@ -25,10 +25,16 @@
     </head>
 
     <body>
-        <div class="wrapper">
-            <div class="page">
-                {% include "partials/header.njk" %}
-                
+
+
+            <div class="wrapper">
+                <div class="page">
+
+                    <header class="header">
+                        {% include "partials/header.njk" %}
+                        {% include "partials/menu.njk" %}
+                    </header>         
+         
                 <main>
                     {{ content | safe}}
                 </main>
