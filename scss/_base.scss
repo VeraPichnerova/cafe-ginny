@@ -1,0 +1,40 @@
+@use "variables";
+
+html {box-sizing: border-box; background-color: darkgrey;}
+*, ::before, ::after {box-sizing: inherit;}
+
+body {
+      font-family: variables.$font-normal;
+      font-size: variables.$size_m;
+      background-color: variables.$c-secondary;
+      margin: 0 auto;
+      padding: 0;
+      max-width: 1000px;
+}
+
+.footer-info {
+    width: 100%;
+    padding: 15px 10px;
+    text-align: center;
+    background-color: variables.$c-primary;
+    color: variables.$c-secondary;
+    font-size: variables.$size_m;
+}
+
+
+@media screen and (min-width: 600px) {
+    .wrapper {
+        display: flex;
+    }
+    
+    .page {
+        flex: 1 1 85%;
+    }
+    
+    .aside {
+        flex: 0 0 15%;
+        background-image: url(/images/bgr-cofee2.png);
+        background-position: top;
+        background-repeat: repeat;
+    }
+}

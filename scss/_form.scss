@@ -1,0 +1,50 @@
+@use "variables";
+
+a,
+a:hover,
+a:visited {
+    color: inherit;
+}
+
+.form--newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__item {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+label,
+.form__input {
+    margin: 10px 10px 10px 0;
+}
+
+.form__label {
+    width: 100px;
+}
+
+.form__label-checkbox {
+    margin-left: 10px;
+}
+
+.button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: variables.$rad-tiny;
+    border: 1px solid variables.$c-primary;
+    background-color: variables.$c-tertiary;
+    color: variables.$c-secondary;
+}
+
+.button:hover {
+    background-color: variables.$c-primary;
+}
+
+#newsletter-registrace,
+#rezervace-odeslana {
+    color: variables.$c-primary;
+    padding: 10px 0;
+}
+

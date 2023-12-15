@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  font-family: Georgia, serif;
-  font-size: 16px;
+  font-family: Verdana, serif;
+  font-size: 14px;
   background-color: rgb(234, 214, 198);
   margin: 0 auto;
   padding: 0;
@@ -20,7 +20,7 @@ body {
   width: 100%;
   padding: 15px 10px;
   text-align: center;
-  background-color: rgba(152, 9, 100, 0.7725490196);
+  background-color: rgba(139, 7, 91, 0.938);
   color: rgb(234, 214, 198);
   font-size: 14px;
 }
@@ -43,29 +43,30 @@ body {
   width: 100%;
   padding: 20px;
   background-color: rgb(234, 214, 198);
-  color: rgba(152, 9, 100, 0.7725490196);
 }
 
 .header__logo {
-  font-size: 50px;
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  font-size: 40px;
+  font-family: Georgia, serif;
+  color: rgba(139, 7, 91, 0.938);
   margin-top: 0;
 }
 
 .header__claim {
-  color: rgba(152, 9, 100, 0.7725490196);
+  color: rgba(139, 7, 91, 0.938);
   font-size: 20px;
-  text-shadow: 0 3px 10px rgba(152, 9, 100, 0.459);
-  font-style: italic;
 }
 
 .header__subtitle {
-  font-size: 18px;
-  font-style: bold;
+  font-size: 14px;
+  color: rgba(152, 9, 100, 0.646);
+  font-style: italic;
   margin: 0;
 }
 
 .header__text {
+  font-size: 14px;
+  font-style: italic;
   padding: 0;
   margin: 0 0 10px 0;
 }
@@ -90,15 +91,15 @@ body {
 }
 
 .menu__item {
-  background-color: rgb(234, 214, 198);
-  color: rgba(152, 9, 100, 0.7725490196);
-  border: 1px solid rgb(234, 214, 198);
+  background-color: rgba(152, 9, 100, 0.646);
+  color: rgb(234, 214, 198);
+  border: 1px solid rgba(139, 7, 91, 0.938);
   border-radius: 5px;
 }
 
 .menu__item--active {
   color: rgb(234, 214, 198);
-  background-color: rgba(152, 9, 100, 0.7725490196);
+  background-color: rgba(139, 7, 91, 0.938);
   border: 1px solid rgb(234, 214, 198);
 }
 
@@ -106,12 +107,14 @@ body {
   text-decoration: none;
   display: block;
   padding: 10px;
+  border-radius: 5px;
 }
 
-.menu__link:hover,
-.menu__link:focus {
-  background-color: rgba(152, 9, 100, 0.459);
+.menu__link:focus,
+.menu__link:hover {
+  background-color: rgba(139, 7, 91, 0.938);
   color: rgb(234, 214, 198);
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 600px) {
@@ -135,6 +138,10 @@ body {
 .o-kave-section,
 .map {
   padding: 20px;
+}
+
+.reservation-section {
+  padding: 0 20px 20px 20px;
 }
 
 .picture__img {
@@ -164,6 +171,9 @@ body {
     display: flex;
     gap: 40px;
     justify-content: space-between;
+  }
+  .akce-section__item {
+    margin-bottom: 10px;
   }
   .content {
     flex: 1 1 60%;
@@ -208,18 +218,19 @@ label,
   margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
-  border: none;
-  background-color: rgba(152, 9, 100, 0.459);
+  border: 1px solid rgba(139, 7, 91, 0.938);
+  background-color: rgba(152, 9, 100, 0.646);
   color: rgb(234, 214, 198);
 }
 
 .button:hover {
-  background-color: rgba(152, 9, 100, 0.7725490196);
+  background-color: rgba(139, 7, 91, 0.938);
 }
 
 #newsletter-registrace,
 #rezervace-odeslana {
-  color: rgba(152, 9, 100, 0.459);
+  color: rgba(139, 7, 91, 0.938);
+  padding: 10px 0;
 }
 
 .pricelist {
@@ -242,16 +253,13 @@ label,
   }
 }
 .content__subtitle {
-  color: rgba(152, 9, 100, 0.7725490196);
+  color: rgba(139, 7, 91, 0.938);
+  font-style: italic;
   padding-bottom: 5px;
   margin: 0;
 }
 
 .content__text {
-  text-align: justify;
-}
-
-.content__text--long {
   text-align: justify;
 }
 

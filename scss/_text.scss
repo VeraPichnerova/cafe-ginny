@@ -1,0 +1,23 @@
+@use "variables";
+
+.content__subtitle {
+    color: variables.$c-primary;
+    font-style: italic;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.content__text {
+    text-align: justify;
+}
+
+.content__unordered-list {
+    list-style-position: inside;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.content__unordered-list li {
+    padding: 3px;
+    text-align: justify;
+}

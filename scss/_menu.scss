@@ -1,0 +1,51 @@
+@use "variables";
+
+.menu__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu__item {
+    background-color: variables.$c-tertiary;
+    color: variables.$c-secondary;
+    border: 1px solid variables.$c-primary; 
+    border-radius: variables.$rad-tiny;
+}
+
+.menu__item--active {
+    color: variables.$c-secondary;
+    background-color: variables.$c-primary;
+    border: 1px solid variables.$c-secondary;
+}
+
+.menu__link {
+    text-decoration: none;
+	display: block;
+	padding: 10px;
+    border-radius: variables.$rad-tiny;
+}
+
+.menu__link:focus,
+.menu__link:hover {
+	background-color: variables.$c-primary;
+	color: variables.$c-secondary;
+    border-radius: variables.$rad-tiny;
+}
+
+@media screen and (min-width: 600px) {
+
+    .menu__items {
+        display:flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .menu__item {
+        display: inline-block;
+    }
+
+    .menu__link {
+        padding: 10px 10px;
+    }
+}

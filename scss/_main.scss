@@ -1,0 +1,63 @@
+@use "variables";
+
+.hero,
+.newsletter,
+.reservation-section,
+.pricelist-section,
+.akce-section,
+.o-kave-section,
+.map {
+    padding: variables.$spacer;
+}
+
+.reservation-section {
+    padding: 0 variables.$spacer variables.$spacer variables.$spacer;
+}
+
+.picture__img {
+	width: 100%;
+	border-radius: variables.$rad-tiny;
+    margin-bottom: 10px;
+}
+
+.img__float-left {
+    width: 35%;
+    float: left;
+    margin-right: variables.$spacer;
+    border-radius: variables.$rad-tiny;
+}
+
+.img__float-right {
+    width: 35%;
+    float: right;
+    margin-left: variables.$spacer;
+    border-radius: variables.$rad-tiny;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .hero,
+    .newsletter,
+    .akce-section__item {
+        display: flex;
+        gap: 2 * variables.$spacer;
+        justify-content: space-between;
+    }
+
+.akce-section__item {
+    margin-bottom: 10px;
+}
+
+    .content {
+        flex: 1 1 60%;
+        align-items: start;
+    }
+
+    .picture {
+        order: -1;
+        flex: 1 1 40%;
+        align-items: start;
+    }
+
+}

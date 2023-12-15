@@ -1,0 +1,24 @@
+@use "variables";
+
+.pricelist {
+    width: 100%;
+    padding-bottom:20px;
+}
+
+.pricelist td {
+    width: 85%;
+}
+
+@media screen and (min-width: 600px) {
+
+    .pricelist-section {
+        display: flex;
+        gap: 2 * variables.$spacer;
+    }
+
+    .pricelist__column {
+        flex: 1 1 45%;
+        align-items: start;
+    }
+
+}

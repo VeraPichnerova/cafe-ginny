@@ -1,0 +1,48 @@
+@use "variables";
+
+.header {
+    width: 100%;
+    padding: variables.$spacer;
+    background-color: variables.$c-secondary;
+}
+
+.header__logo {
+    font-size: 40px;
+    font-family: variables.$font-special;
+    color: variables.$c-primary;
+    margin-top: 0;
+}
+
+.header__claim {
+    color: variables.$c-primary;
+    font-size: 20px;
+}
+
+.header__subtitle {
+    font-size: variables.$size_m;
+    color: variables.$c-tertiary;
+    font-style: italic;
+    margin: 0;
+}
+
+.header__text {
+    font-size: variables.$size_m;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+@media screen and (min-width: 600px) {
+    .header__logo-claim,
+    .header__info {
+    display: flex;
+    gap: 30px;
+    align-items: baseline;
+}
+
+    .address,
+    .opening-hours {
+        display: flex;
+        flex-direction: column;
+    }
+}
