@@ -1,6 +1,12 @@
 <header class="header">
-    <h1 class="header__logo">Café Ginny</h1>
-    <h2 class="claim--header"> Útulná kavárna v centru Kutné Hory</h2>
+    <div class="header__logo-claim">
+        <div>
+            <h1 class="header__logo">Café Ginny</h1>
+        </div>
+        <div>
+            <h2 class="header__claim"> Útulná kavárna v centru Kutné Hory</h2>
+        </div>
+    </div>
     <div class="header__info">
         <div class="address">
             <h3 class="header__subtitle">Adresa:</h3>
@@ -18,15 +24,5 @@
             </p>
         </div>
     </div>
-    <nav class="menu">
-        <ul class="menu__items">
-            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == ''}}"><a class="menu__link" href="/">DOMŮ</a></li>
-            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'nabidka'}}"><a class="menu__link" href="/nabidka/">NAŠE NABÍDKA</a></li>
-            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'akce'}}"><a class="menu__link" href="/akce/">AKCE</a></li>
-            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'o-kave'}}"><a class="menu__link" href="/o-kave/">O KÁVĚ</a></li>
-            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == '#map'}}"><a class="menu__link" href="/#map">KDE NÁS NAJDETE</a></li>
-            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'rezervace'}}"><a class="menu__link" href="/rezervace/">REZERVACE</a></li>
-        </ul>
-    </nav>
+    {% include "partials/menu.njk" %}
 </header>
-    

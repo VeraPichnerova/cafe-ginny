@@ -42,24 +42,22 @@ body {
 .header {
   width: 100%;
   padding: 10px 10px 5px 10px;
-  background-color: rgba(152, 9, 100, 0.7725490196);
-  color: rgb(234, 214, 198);
+  background-color: rgb(234, 214, 198);
+  color: rgba(152, 9, 100, 0.7725490196);
   margin-bottom: 5px;
 }
 
 .header__logo {
-  font-size: 30px;
+  font-size: 50px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
   margin-top: 0;
 }
 
-.claim {
+.header__claim {
+  color: rgba(152, 9, 100, 0.459);
   font-size: 20px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
   font-style: italic;
-  color: rgba(152, 9, 100, 0.7725490196);
-}
-
-.claim--header {
-  color: rgb(234, 214, 198);
 }
 
 .header__subtitle {
@@ -70,7 +68,7 @@ body {
 
 .header__text {
   padding: 0;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 .menu {
@@ -111,9 +109,11 @@ body {
 }
 
 @media screen and (min-width: 600px) {
+  .header__logo-claim,
   .header__info {
     display: flex;
     gap: 30px;
+    align-items: baseline;
   }
   .address,
   .opening-hours {
@@ -132,6 +132,8 @@ body {
     padding: 10px 10px;
   }
 }
+.hero,
+.newsletter,
 .reservation-section,
 .pricelist-section,
 .akce-section,
@@ -143,7 +145,6 @@ body {
 .picture__img {
   width: 100%;
   border-radius: 5px;
-  margin: 20px;
 }
 
 .img__float-left {
@@ -166,6 +167,7 @@ body {
   .akce-section__item {
     display: flex;
     gap: 40px;
+    justify-content: space-between;
   }
   .content {
     flex: 1 1 60%;
@@ -219,7 +221,7 @@ label,
   background-color: rgba(152, 9, 100, 0.7725490196);
 }
 
-#newsletter-odeslano,
+#newsletter-registrace,
 #rezervace-odeslana {
   color: rgba(152, 9, 100, 0.459);
 }
@@ -250,11 +252,12 @@ label,
 }
 .content__subtitle {
   color: rgba(152, 9, 100, 0.7725490196);
+  padding-bottom: 5px;
+  margin: 0;
 }
 
-.content__subtitle,
 .content__text {
-  padding-top: 5px;
+  text-align: justify;
 }
 
 .content__text--long {

@@ -1,0 +1,10 @@
+    <nav class="menu">
+        <ul class="menu__items">
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == ''}}"><a class="menu__link" href="/">DOMŮ</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'nabidka'}}"><a class="menu__link" href="/nabidka/">NAŠE NABÍDKA</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'akce'}}"><a class="menu__link" href="/akce/">AKCE</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'o-kave'}}"><a class="menu__link" href="/o-kave/">O KÁVĚ</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == '#map'}}"><a class="menu__link" href="/#map">KDE NÁS NAJDETE</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'rezervace'}}"><a class="menu__link" href="/rezervace/">REZERVACE</a></li>
+        </ul>
+    </nav>

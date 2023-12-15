@@ -20,16 +20,16 @@
         <div class="wrapper">
             <div class="page">
                 {% include "partials/header.njk" %}
-
+                
                 <main>
                     {{ content | safe}}
                 </main>
-
-                {% include "partials/footer.njk" %}
             </div>
 
             <div class="aside">
             </div>
+
         </div>
+        {% include "partials/footer.njk" %}
     </body>
 </html>
